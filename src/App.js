@@ -61,9 +61,16 @@ function App() {
               Away Field Goal
           </button>
         </div>
+
+        <div className="quarterButtons"></div>
       </section>
     </div>
   );
 }
 
 export default App;
+
+//TODO convert scoreboard into a (real :D) football scoreboard. Replace 'Down' 'Quarter' panels with 'Shots', add button for adding 1 to shots panels. 
+//TODO remove touchdown and field goal buttons and replace with 'Goal' buttons.
+//TODO replace 'To go' and 'ball on' panels with a half panal with a button to switch between 1 and 2
+//TODO (extra) added time panel next to the timer.. '+ num'
