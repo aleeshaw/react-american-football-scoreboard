@@ -43,6 +43,8 @@
 
 .home__name,
 .away__name,
+.down__title,
+.toGo__title,
 .shots__title,
 .half__title,
 .ballOn__title,
@@ -82,6 +84,8 @@
 
 .shots,
 .half,
+.down,
+.toGo,
 .ballOn,
 .quarter {
   display: flex;
@@ -92,6 +96,8 @@
 
 .shots__value,
 .half__value,
+.down__value,
+.toGo__value,
 .ballOn__value,
 .quarter__value {
   font-family: "Ozone";
