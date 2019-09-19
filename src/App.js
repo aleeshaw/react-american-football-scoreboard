@@ -139,7 +139,11 @@ const [half, setHalf] = useState(1);
         </div>
 
         <div className="centerButton">
-          <button className="halfButton">Half</button>
+          <button className="halfButton" onClick = {() => {
+            setHalf(half === 1 ? 2 : 1)
+          }}>
+            Half
+          </button>
         </div>
 
         <div className="awayButtons">
