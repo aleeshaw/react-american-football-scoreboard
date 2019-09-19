@@ -12,6 +12,7 @@ const BottomRow = () => {
         <h3 className="shots__title">Shots</h3>
         <div className="shots__value">{homeShots}</div>
       </div>
+
       <div className="half">
         <h3 className="half__title">Half</h3>
         <div className="half__value">{half}</div>
@@ -21,7 +22,8 @@ const BottomRow = () => {
         <h3 className="shots__title">Shots</h3>
         <div className="shots__value">{awayShots}</div>
       </div>
-    </div>
+    </div> 
+    
   );
 };
 
