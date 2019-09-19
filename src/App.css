@@ -43,8 +43,8 @@
 
 .home__name,
 .away__name,
-.down__title,
-.toGo__title,
+.shots__title,
+.half__title,
 .ballOn__title,
 .quarter__title {
   text-transform: uppercase;
@@ -80,8 +80,8 @@
   height: 20rem;
 }
 
-.down,
-.toGo,
+.shots,
+.half,
 .ballOn,
 .quarter {
   display: flex;
@@ -90,8 +90,8 @@
   place-items: center;
 }
 
-.down__value,
-.toGo__value,
+.shots__value,
+.half__value,
 .ballOn__value,
 .quarter__value {
   font-family: "Ozone";
