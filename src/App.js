@@ -1,7 +1,8 @@
 /////TODO: STEP 1 - Import the useState hook.
 import React, {useState} from "react";
 import "./App.css";
-import BottomRow from "./BottomRow";
+//import BottomRow from "./BottomRow";
+
 
 function App() {
   //original assignment code comment out for orig. display. VVV
@@ -77,6 +78,10 @@ function App() {
 const [homeGoal, setHGoal] = useState(0);
 const [awayGoal, setAGoal] = useState(0);  
 
+const [homeShots, setHShots] = useState(0);
+const [awayShots, setAShots] = useState(0);
+const [half, setHalf] = useState(1);
+
   return (
     <div className="container">
       <section className="scoreboard">
@@ -94,18 +99,37 @@ const [awayGoal, setAGoal] = useState(0);
             <div className="away__score">{awayGoal}</div>
           </div>
         </div>
-        <BottomRow />
+
+        {/* <BottomRow /> */}
+
+        <div className="bottomRow">
+      <div className="shots homeShots">
+        <h3 className="shots__title">Shots</h3>
+        <div className="shots__value">{homeShots}</div>
+      </div>
+
+      <div className="half">
+        <h3 className="half__title">Half</h3>
+        <div className="half__value">{half}</div>
+      </div>
+     
+      <div className="shots awayShots">
+        <h3 className="shots__title">Shots</h3>
+        <div className="shots__value">{awayShots}</div>
+      </div>
+    </div> 
+
       </section>
       <section className="buttons">
         <div className="homeButtons">
           {/* TODO STEP 4 - Now we need to attach our state setter functions to click listeners. */}
           <button className="homeButtons__touchdown"
             onClick = {() => {
-              setHGoal(homeGoal + 6);
+              setHShots(homeShots + 1);
             }}>
               Home Shot
           </button>
-
+            
           <button className="homeButtons__fieldGoal"
           onClick = {() => {
             setHGoal(homeGoal + 1);
@@ -114,10 +138,14 @@ const [awayGoal, setAGoal] = useState(0);
           </button>
         </div>
 
+        <div className="centerButton">
+          <button className="halfButton">Half</button>
+        </div>
+
         <div className="awayButtons">
           <button className="awayButtons__touchdown"
             onClick = {() => {
-              setAGoal(awayGoal + 6);
+              setAShots(awayShots + 1);
             }}>
               Away Shot
           </button>
