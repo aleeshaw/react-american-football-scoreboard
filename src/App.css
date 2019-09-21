@@ -45,6 +45,8 @@
 .away__name,
 .down__title,
 .toGo__title,
+.shots__title,
+.half__title,
 .ballOn__title,
 .quarter__title {
   text-transform: uppercase;
@@ -80,6 +82,8 @@
   height: 20rem;
 }
 
+.shots,
+.half,
 .down,
 .toGo,
 .ballOn,
@@ -90,6 +94,8 @@
   place-items: center;
 }
 
+.shots__value,
+.half__value,
 .down__value,
 .toGo__value,
 .ballOn__value,
@@ -107,7 +113,7 @@
 }
 
 .buttons {
-  width: 50%;
+  width: 30%;
   margin: 0 auto;
   display: flex;
   justify-content: space-around;
@@ -116,7 +122,8 @@
 .homeButtons__touchdown,
 .homeButtons__fieldGoal,
 .awayButtons__touchdown,
-.awayButtons__fieldGoal {
+.awayButtons__fieldGoal,
+.halfButton {
   margin: 1rem;
   border-radius: 4px;
 }
