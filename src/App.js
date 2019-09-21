@@ -35,7 +35,7 @@ function App() {
 //           {/* TODO STEP 4 - Now we need to attach our state setter functions to click listeners. */}
 //           <button className="homeButtons__touchdown"
 //             onClick = {() => {
-//               setHScore(homeScore + 6);
+//               setHScore(homeScore + 7);
 //             }}>
 //               Home Touchdown
 //           </button>
@@ -51,7 +51,7 @@ function App() {
 //         <div className="awayButtons">
 //           <button className="awayButtons__touchdown"
 //             onClick = {() => {
-//               setAScore(awayScore + 6);
+//               setAScore(awayScore + 7);
 //             }}>
 //               Away Touchdown
 //           </button>
@@ -69,10 +69,11 @@ function App() {
 // }
 
 
-//TODO (extra) added time panel next to the timer.. '+ num'
 
 /*"Football" Scoreboard Conversion*/
-     
+
+// //TODO (extra) added time panel next to the timer.. '+ num'
+
 const [homeGoal, setHGoal] = useState(0);
 const [awayGoal, setAGoal] = useState(0);  
 
